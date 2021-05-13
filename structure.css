@@ -1,0 +1,150 @@
+    body{
+        margin: 0;
+        padding: 0;
+
+        background-color: red;
+
+        font-family: Arial;
+        text-align: center;
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+        @media (orientation: portrait){
+            body{
+                display: grid;
+                grid-template-columns: 0% auto 0%;
+            }
+        }
+
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        background-color: aqua;
+        display: grid;
+        grid-column: 2;
+    }
+
+    header{
+        background-color: green;
+    }
+
+    nav{
+        background-color: orange;
+    }
+
+    main{
+        background-color: white;
+        margin-bottom: 2px;
+    }
+
+    .carousel{
+        background-color: pink;
+        margin: 2px, 2px, 0px, 2px;
+    }
+
+    section{
+        background-color: whitesmoke;
+
+    }
+        section > *{
+            background-color: grey;
+            margin: 2px 2px 0px 2px;
+        }
+            .oneElement{
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            .twoElement{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+                .twoElement article:first-child{
+                    margin-right: 1px;
+                }
+                .twoElement article:last-child{
+                    margin-left: 1px;
+                }
+                @media (orientation: portrait){
+                    .twoElement{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                    }
+                        .twoElement article:first-child{
+                            margin-right: 1px;
+                        }
+                        .twoElement article:last-child{
+                            margin-left: 1px;
+                        }
+                    }
+
+            .threeElement{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+                .threeElement article:first-child{
+                    margin-right: 1px;
+                }
+                .threeElement :nth-of-type(2){
+                    margin-left: 1px;
+                    margin-right: 1px;
+                }
+                .threeElement article:last-child{
+                    margin-left: 1px;
+                }
+                @media (orientation: portrait){
+                    .threeElement{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                    }
+                        .threeElement :nth-of-type(2){
+                            margin-right: 2px;
+                        }
+                        .threeElement article:first-child{
+                            margin-right: 1px;
+                        }
+                        .threeElement article:last-child{
+                            margin-left: 2px;
+                            grid-column: 1 / span 2;
+                        }
+                    }
+
+
+            .fourElement{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+                
+                .fourElement article{
+                    margin-left: 1px;
+                    margin-right: 1px;
+                }
+                .fourElement article:first-child{
+                    margin-left: 2px;
+                }
+                .fourElement article:last-child{
+                    margin-right: 2px;
+                }
+                @media (orientation: portrait){
+                    .fourElement{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                    }
+                    .fourElement :nth-child(odd){
+                        margin-left: 2px;
+                        margin-right: 1px;
+                    }                    
+                    .fourElement :nth-child(even){
+                        margin-left: 1px;
+                        margin-right: 2px;
+                    }
+                }
+
+    footer{
+        background-color: blueviolet;
+    }

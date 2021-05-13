@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>exemple</title>
+
+    <link rel="stylesheet" href="exemple.css" />
+<!--
+    <script src="script.js"></script>
+-->
+
+<!-- appel de flickity pour le carousel -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="wrapperLeft">
+    </div>
+    <div class="wrapperRight">
+    </div>
+
+    <div class="container">
+
+
+        <header>
+            <div class="titleHeader">
+                <h1>La Conserverie</h1>
+            </div>
+        </header>
+
+        <nav>
+
+            <div class="upperNav">
+        
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="Notre logo" />
+                    </a>
+                </div>
+        
+                <div class="searchBar">
+                        <input type="search" placeholder="Rechercher..." />
+                </div>
+
+                <div class="account">
+                    <a href="https://www.google.com">
+                        <img src="images/account.svg" alt="Votre compte" />
+                    </a>
+                </div>
+        
+                <div class="basket">
+                    <a href="https://www.google.com">
+                        <img src="images/basket.svg" alt="Votre panier" />
+                    </a>
+                </div>
+        
+            </div>
+        
+            <div>
+                <div class="bottomNav">
+                    <ul>
+                        <li><a href="exemple.html">Viande</a></li>
+                        <li><a href="exemple.html">Légumes</a></li>
+                        <li><a href="exemple.html">Promotions</a></li>
+                        <li><a href="exemple.html">Condiments</a></li>
+                        <li><a href="exemple.html">Accessoires</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        </nav>
+
+
+        <!-- 
+            Pas nécessaire pour la page d'accueil
+
+        <div class="ariane">
+            <p>Accueil</p>
+        </div> 
+        -->
+
+
+        <main>
+
+            <div class="carousel" 
+            data-flickity='{    "imagesLoaded": true, 
+                                "percentPosition": false, 
+                                "prevNextButtons": true,
+                                "contain": true,
+                                "pageDots": false,
+                                "freeScroll": true,
+                                "wrapAround": true
+                            }'>
+                <a href="">
+                    <img src="images/pate1.jpg" alt="Nos promotions">
+                </a>
+                <a href="">
+                    <img src="images/pate2.jpg" alt="Nos promotions">
+                </a>
+                <a href="">
+                    <img src="images/pate3.jpg" alt="Nos promotions">
+                </a>
+                <a href="">
+                    <img src="images/Foie1.jpg" alt="Nos promotions">
+                </a>
+                <a href="">
+                    <img src="images/Foie2.jpg" alt="Nos promotions">
+                </a>
+            </div>
+
+            <!-- Section en grid -->
+            <!-- <section class="oneElement">
+                <article>article 1</article>
+            </section>
+
+            <section class="twoElement">
+                <article>article 1</article>
+                <article>article 2</article>
+            </section>
+
+            <section class="threeElement">
+                <article>article 1</article>
+                <article>article 2</article>
+                <article>article 3</article>
+            </section>
+
+            <section class="fourElement">
+                <article>article 1</article>
+                <article>article 2</article>
+                <article>article 3</article>
+                <article>article 4</article>
+            </section> -->
+
+            <!-- Section en flex -->
+
+            
+            <section>
+                <!-- <article class="articleSimple">
+                    <img src="" alt="">
+                    <h3></h3>
+                    <p>€</p>
+                    <button>Ajouter au panier</button>
+                </article> -->
+
+                <article class="articleSimple">
+                    <img src="images/Cassoulet.jpg" alt="Cassoulet prêt à être dégusté.">
+                    <h3>Cassoulet</h3>
+                    <p>9.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/confitDeCanard.jpg" alt="Un confit de canard.">
+                    <h3>Confit de Canard</h3>
+                    <p>14.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/foieGras.jpg" alt="Présentation foie gras.">
+                    <h3>Foie gras de canard</h3>
+                    <p>24.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/garbure.jpg" alt="Garbure des Pyrénées">
+                    <h3>Garbure des Pyrénées</h3>
+                    <p>7.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/graisseDeCanard.jpg" alt="Pot de graisse de canard.">
+                    <h3>Graisse de canard</h3>
+                    <p>4.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/graisseDOie.jpg" alt="Pot de graisse d'oie.">
+                    <h3>Graisse d'oie</h3>
+                    <p>5.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/pateTete.jpg" alt="Paté de tête.">
+                    <h3>Paté de tête</h3>
+                    <p>8.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/petit_sale_lentilles_vertes_puy.jpg" alt="Petit salé aux lentilles">
+                    <h3>Petit salé aux lentilles</h3>
+                    <p>9.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/pommesDeTerre.jpg" alt="Pommes de terre en conserve.">
+                    <h3>Pommes de terre</h3>
+                    <p>3.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+                <article class="articleSimple">
+                    <img src="images/products/rillettesCanard.jpg" alt="Rillettes de canard.">
+                    <h3>Rillettes de canard</h3>
+                    <p>6.99€</p>
+                    <img src="images/icones/add-to-cart.svg" alt="Ajouter au panier" />
+                </article>
+
+        </main>
+
+<!-- ------------------------------------- Footer -------------------------------------------------- -->
+
+        <footer>
+
+            <div class="footerText">
+                <h6>Un esprit</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Necessitatibus, a fugit, eos obcaecati libero aliquid praesentium, 
+                    expedita assumenda beatae ea eligendi maiores. 
+                    Quidem maxime unde quos at ipsa nisi officiis.
+                </p>
+            </div>
+
+            <div class="footerMain">
+                <h6>La Conserverie</h6>
+                <ul>
+                    <li>Qui sommes nous?</li>
+                    <li>Mentions légales</li>
+                    <li>L'entreprise</li>
+                    <li>Notre filière qualité</li>
+                    <li>Livraison</li>
+                    <li>FAQ</li>
+
+                </ul>
+            </div>
+
+            <div class="footerSocial">
+                <h6>Suivez-nous</h6>
+                <ul>
+                    <li><a href="https://www.twitter.com"><img src="images/icones/twitter.svg" alt="Lien vers notre Twitter"></a>
+                    <a href="https://www.facebook.com"><img src="images/icones/facebook.svg" alt="Lien vers notre page Facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="images/icones/instagram.svg" alt="Lien vers notre Instagram"></a>
+                    <a href="https://www.pinterest.com"><img src="images/icones/pinterest.svg" alt="Lien vers notre page Pinterest"></a></li>
+                    <li><a href="https://www.youtube.com"><img src="images/icones/youtube.svg" alt="Lien vers notre chaîne Youtube"></a></li>
+                </ul>
+
+            </div>
+
+            <div class="footerNewsLetter">
+                <h6>Newsletter</h6>
+                    <form action="">
+                    <label for="email">Restez informé sur nos offres :</label>
+                    <input name="email" id="email" type="email" placeholder="Votre email" />
+                    <button for="newsLetterField">S'enregistrer</button>
+                </form>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
