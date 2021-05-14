@@ -45,25 +45,37 @@ body{
 /* ---------------------------------------- Header ------------------------------------------- */
 
 header{
-    height: 250px;
+    display: flex;
+
     background-image: url(images/pateCampagne.jpg);
     background-size: cover;
-}
 
-.titleHeader{
-    border: solid 8px #800000;
-    margin: 5% 15% 5% 15%;
+    min-height: 250px;
+    width: 100%;
 
+    justify-content: center;
 }
+    .titleHeader{
+        display:flex;
+        place-self: center;
 
-h1{
-    font-family: "Dancing_Script";
-    margin: 2.5%;
-    color: #800000;
-    font-size: 500%;
-    border: solid 8px #800000;
-    background-color: rgba(255, 255, 255, 0.705);
-}
+        border: solid 8px #800000;
+        padding: 1%;
+    }
+        .titleHeader h1{
+            border: solid 8px #800000;
+
+            margin: 0;
+
+            font-family: "Dancing_Script";
+            font-size: 450%;
+            color: #800000;
+            white-space: nowrap;
+
+            background-color: rgba(255, 255, 255, 0.705);
+        }
+
+/* il faut que je trouve un moyen d'ajouter un padding au h1 sans qu'il en résulte un décallage sur la droite */
 
 /* --------------------------------------- nav ---------------------------------------  */
 
