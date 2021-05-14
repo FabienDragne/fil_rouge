@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 1px;
 
     background-color: black;
 
@@ -13,6 +13,16 @@ body{
     font-family: "Gotham-Light";
 
     z-index: 1;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
 }
 
     @media (orientation: portrait){
@@ -74,10 +84,80 @@ header{
 
             background-color: rgba(255, 255, 255, 0.705);
         }
+        .titleHeader a{
+            color: #800000;
+        }
 
 /* il faut que je trouve un moyen d'ajouter un padding au h1 sans qu'il en résulte un décallage sur la droite */
 
 /* --------------------------------------- nav ---------------------------------------  */
+
+/* --------------------------------------- searchBar ---------------------------------  */
+
+    .upperNav{
+        display: flex;
+        align-content: space-around;
+
+        background-color: #474a2c86;
+    
+        font-family: "GothamBook";
+    
+        z-index: 5;
+
+        padding: 0;
+        margin: 0;
+
+    }
+    .upperNav button{
+        border: none;
+    }
+    .upperNav input{
+        border: none;
+    }
+        .upperNav .logo{
+            display: flex;
+            height: 100%;
+            width: auto;
+        }
+        .upperNav .wrapper:nth-child(even){
+            width: auto;
+            display: flex;
+            margin: 0 auto 0 auto;
+        }
+        .upperNav .searchBar{
+            display: flex;
+            height: 100%;
+            width: auto;
+        }
+            .searchBar input{
+                height: 100%;
+            }
+            .searchBar label img{
+                height: 100%;
+                width: auto;
+            }
+        .upperNav .wrapper:nth-child(odd){
+            width: auto;
+            display: flex;
+            margin: 0 auto 0 auto;
+        }
+        .account{
+            height: 100%;
+            width: auto;
+        }
+            .account img{
+                height: 100%;
+                width: auto;
+            }
+        .basket{
+            align-self: flex-end;
+            height: 100%;
+            width: auto;
+
+            border-left: solid 1px #474747;
+        }
+
+/* --------------------------------------- navBar ------------------------------------  */
 
 @keyframes anim_nav_bar{
     0%{
@@ -88,103 +168,78 @@ header{
     }
 }
 
-nav{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    
-    background-color: #474a2c86;
-    color: whitesmoke;
-    font-family: "GothamBook";
+    .navBar{
+        position: sticky;
+        top: 0;
 
-    z-index: 5;
-}
-    .upperNav{
-        display: grid;
-        grid-template-columns: 100px auto 50px 50px;
-        grid-row: 1;
+        background-color: #474a2c86;
+
+        color: whitesmoke;
+        font-family: "GothamBook";
+    
+        z-index: 5;
+
+        text-align: center;
     }
-    .logo{
-        width: 50px;
-        height: 50px;
-        grid-column: 1;
-        grid-row: 1 / span 2;
-    }
-        .logo img{
-            width: 50px;
-            height: 50px;
-            place-self: center;
-            background-color: #800000;
-        }
-        .searchBar{
-            align-self: center;
-        }
-        input{
-            display: block;
-            margin: 0 10% 0 2%;
-            height: 100%;
-        }
-        .account{
-            place-self: center;
-            background-color: lightgrey;
-            width: 50px;
-            height: 50px;
-        }
-            .account img{
-                width: 50px;
-                height: 50px;
-            }
-            .basket img{
-                width: 50px;
-                height: 50px;
-                background-color: #a7a0a0;
-            }
-    .bottomNav{
-        grid-row: 2;
-    }
-    nav ul{
+    .navBar ul{
         list-style-type: none;
         display: inline-flex;
         justify-content: space-around;
     }
-        nav ul li{
+        .navBar ul li{
             display: inline-flex;
             margin: 0 2% 0 2%;
         }
-
-        a:link{
+        .navBar a:link{
             text-decoration: none;
             color: white;
         }
-        a:visited{
+        .navBar a:visited{
             text-decoration: none;
             color: white;
         }
-        a:active{
+        .navBar a:active{
             text-decoration: none;
             color: white;
         }
-        a:hover{
+        .navBar a:hover{
             text-decoration: underline;
         }
-        nav ul li:nth-child(1){
+        .navBar ul li:nth-child(1){
             animation: anim_nav_bar 1s;
         }
-        nav ul li:nth-child(2){
+        .navBar ul li:nth-child(2){
             animation: anim_nav_bar 0.8s;
         }
-        nav ul li:nth-child(3){
+        .navBar ul li:nth-child(3){
             animation: anim_nav_bar 0.6s;
         }
-        nav ul li:nth-child(4){
+        .navBar ul li:nth-child(4){
             animation: anim_nav_bar 0.4s;
         }
-        nav ul li:nth-child(5){
+        .navBar ul li:nth-child(5){
             animation: anim_nav_bar 0.2s;
         }
+
+/* ---------------------------------------------- goTop -------------------------------------------------- */
+
+.goTop{
+    position: fixed;
+
+    margin-right: 1%;
+    margin-bottom: 0.85%;
+
+    bottom: 0;
+    right: 0;
+
+    z-index: 5;
+}
+
+    .goTop img{
+        background: white;
+    }
+
+
 
 /* ---------------------------------------------- Main -------------------------------------------------- */
 
